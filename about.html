@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Scaffolding Information & FAQ | Level Up Scaffolding Surrey</title>
+    <meta name="description" content="Comprehensive scaffolding information, frequently asked questions, and trusted business partners in roofing & rendering. Professional advice from Surrey's scaffolding experts.">
+    <link rel="canonical" href="https://www.levelupscaffolding.com/info-faq">
+    <link rel="alternate" hreflang="en" href="https://www.levelupscaffolding.com/info-faq">
+    
+    <!-- Open Graph & Twitter Card -->
+    <meta property="og:title" content="Scaffolding Information & FAQ | Level Up Scaffolding Surrey">
+    <meta property="og:description" content="Professional scaffolding advice, FAQs, and trusted roofing & rendering partners in Surrey.">
+    <meta property="og:image" content="https://www.levelupscaffolding.com/scaffolding_in_surrey_social_image.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.levelupscaffolding.com/info-faq">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Scaffolding Information & FAQ">
+    <meta name="twitter:description" content="Expert scaffolding advice and trusted partners in Surrey.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E83437',
+                        secondary: '#1a202c',
+                        accent: '#2d3748',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        'roboto': ['Roboto', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-in': 'slideIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideIn: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #E83437 0%, #c53030 100%);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(232, 52, 55, 0.9) 0%, rgba(197, 48, 48, 0.9) 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #E83437 0%, #c53030 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(232, 52, 55, 0.4);
+        }
+
+         .btn-secondary {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(45, 55, 72, 0.4);
+        }
+        
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-content {
+            max-height: 500px;
+        }
+    </style>
+</head>
+<body class="font-roboto bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-xl sticky top-0 z-50" role="navigation" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center">
+                    <img src="level_up_scaffolding_surrey_logo3.png" 
+                         alt="Level Up Scaffolding - Professional Scaffolding Services in Surrey"
+                         class="h-12 w-auto">
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-secondary hover:text-primary font-medium transition duration-300">Home</a>
+                    <a href="about.html" class="text-secondary hover:text-primary font-medium transition duration-300">About</a>
+                    <a href="index.html#services" class="text-secondary hover:text-primary font-medium transition duration-300">Services</a>
+                    <a href="index.html#gallery" class="text-secondary hover:text-primary font-medium transition duration-300">Gallery</a>
+                    <a href="index.html#testimonials" class="text-secondary hover:text-primary font-medium transition duration-300">Testimonials</a>
+                    <a href="#partners" class="text-secondary hover:text-primary font-medium transition duration-300">Partners</a>
+                    <a href="#faq" class="text-secondary hover:text-primary font-medium transition duration-300">FAQ</a>
+                    <a href="index.html#quote" class="bg-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-red-700 transition duration-300">Get Quote</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="lg:hidden flex items-center">
+                    <button type="button" 
+                            class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-primary hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+                            aria-expanded="false"
+                            aria-controls="mobile-menu">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu hidden lg:hidden bg-white border-t" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="text-secondary hover:text-primary block px-3 py-3 font-medium border-b">Home</a>
+                <a href="index.html#about" class="text-secondary hover:text-primary block px-3 py-3 font-medium border-b">About</a>
+                <a href="index.html#services" class="text-secondary hover:text-primary block px-3 py-3 font-medium border-b">Services</a>
+                <a href="index.html#gallery" class="text-secondary hover:text-primary block px-3 py-3 font-medium border-b">Gallery</a>
+                <a href="index.html#testimonials" class="text-secondary hover:text-primary block px-3 py-3 font-medium border-b">Testimonials</a>
+                <a href="#partners" class="text-secondary hover:text-primary block px-3 py-3 font-medium border-b">Partners</a>
+                <a href="#faq" class="text-secondary hover:text-primary block px-3 py-3 font-medium border-b">FAQ</a>
+                <a href="index.html#quote" class="bg-primary text-white block px-3 py-3 font-medium text-center rounded-lg mx-2 my-4">Get Quote</a>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <img src="Background_image_level_Up_Plastering1.png" 
+             alt="Professional scaffolding services in Surrey by Level Up Scaffolding"
+             class="absolute inset-0 w-full h-full object-cover"
+             loading="eager">
+        
+        
+        <!-- Gradient Overlay (Half Potent) -->
+<div class="absolute inset-0 hero-gradient opacity-50"></div>
+
+
+
+        <!-- Content -->
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                Scaffolding Info<br>
+                <span class="text-yellow-300">& FAQ</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-light">
+                Premium Scaffolding in Surrey — Access Towers, Temporary Roofs, Chimney Stacks & Professional Solutions
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mb-8">
+                <a href="tel:+44-1234-567890" 
+                   class="btn-primary text-white font-bold py-4 px-8 rounded-full text-lg inline-flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    <span>Call Now</span>
+                </a>
+                <a href="https://wa.me/441234567890" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="btn-secondary text-white font-bold py-4 px-8 rounded-full text-lg inline-flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893-.001-3.189-1.248-6.189-3.515-8.452"/>
+                    </svg>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="flex flex-wrap justify-center gap-8 text-sm">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                    </svg>
+                    <span>5-Star Rated Service</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    <span>Fully Certified & Insured</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <svg class="w-5 h-5 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>24/7 Emergency Service</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white hover:text-yellow-300 transition duration-300">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Scaffolding Information Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="animate-slide-in">
+                    <h2 class="text-4xl md:text-5xl font-black text-secondary mb-6">
+                        Professional <span class="text-primary">Scaffolding</span> Guide
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        At <strong>Level Up Scaffolding</strong>, we believe in empowering our clients with knowledge. Understanding the scaffolding process helps ensure your project runs smoothly and safely.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gray-50 p-6 rounded-2xl border-l-4 border-primary">
+                            <h3 class="text-xl font-bold text-secondary mb-3">Types of Scaffolding We Provide</h3>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span><strong>Access Towers:</strong> Ideal for maintenance and repair work at height</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span><strong>Temporary Roofs:</strong> Weather protection during construction</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span><strong>Chimney Stacks:</strong> Specialised access for chimney work</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-primary mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span><strong>Solar Installations:</strong> Custom solutions for solar panel fitting</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-primary text-white p-6 rounded-2xl">
+                            <h3 class="text-xl font-bold mb-3">Safety First Approach</h3>
+                            <p class="opacity-90">
+                                All our scaffolding installations comply with UK health and safety regulations. We conduct regular inspections and provide safety certifications for your peace of mind.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-gray-50 p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-secondary mb-4">Scaffolding Process Timeline</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">1</div>
+                                <div>
+                                    <h4 class="font-semibold text-secondary">Initial Consultation</h4>
+                                    <p class="text-gray-600 text-sm">Site assessment and project requirements discussion</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">2</div>
+                                <div>
+                                    <h4 class="font-semibold text-secondary">Quote & Planning</h4>
+                                    <p class="text-gray-600 text-sm">Detailed quotation and project timeline provided</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">3</div>
+                                <div>
+                                    <h4 class="font-semibold text-secondary">Installation</h4>
+                                    <p class="text-gray-600 text-sm">Professional scaffolding erection by certified team</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">4</div>
+                                <div>
+                                    <h4 class="font-semibold text-secondary">Project Completion</h4>
+                                    <p class="text-gray-600 text-sm">Safe dismantling and site clearance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white border-2 border-primary rounded-2xl p-6 text-center">
+                        <h4 class="text-xl font-bold text-secondary mb-2">Need Immediate Assistance?</h4>
+                        <p class="text-gray-600 mb-4">Our team is ready to help with your scaffolding needs</p>
+                        <a href="tel:+44-1234-567890" 
+                           class="btn-primary text-white font-bold py-3 px-6 rounded-full inline-flex items-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>Call Now: 01234 567890</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partners Section -->
+    <section id="partners" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-secondary mb-4">
+                    Trusted <span class="text-primary">Business Partners</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We collaborate with Surrey's finest tradespeople to deliver comprehensive construction solutions
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Roofing Partner -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Roofing Specialists</h3>
+                    <p class="text-gray-700 mb-6">
+                        Working with certified roofing contractors for complete roof repair, replacement, and maintenance services across Surrey.
+                    </p>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Tile & Slate Roofing
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Flat Roof Systems
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Emergency Repairs
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Rendering Partner -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Rendering Experts</h3>
+                    <p class="text-gray-700 mb-6">
+                        Partnering with skilled rendering specialists for external wall finishes that combine durability with aesthetic appeal.
+                    </p>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Traditional Sand & Cement
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Modern Polymer Renders
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Insulated Render Systems
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Construction Partner -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 card-hover text-center">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-secondary mb-4">Building Contractors</h3>
+                    <p class="text-gray-700 mb-6">
+                        Collaborating with reputable building contractors for extensions, renovations, and new construction projects throughout Surrey.
+                    </p>
+                    <div class="space-y-2 text-sm text-gray-600">
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Home Extensions
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Property Renovations
+                        </p>
+                        <p class="flex items-center justify-center">
+                            <svg class="w-4 h-4 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            Commercial Projects
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Partnership CTA -->
+            <div class="text-center mt-12">
+                <div class="bg-primary text-white p-8 rounded-2xl max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">Looking for a Reliable Trade Partner?</h3>
+                    <p class="text-lg opacity-90 mb-6">
+                        We only work with certified, insured, and highly recommended tradespeople. Contact us for trusted partner recommendations.
+                    </p>
+                    <a href="tel:+44-1234-567890" 
+                       class="bg-white text-primary font-bold py-3 px-8 rounded-full inline-flex items-center space-x-2 hover:bg-gray-100 transition duration-300">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span>Get Partner Recommendations</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-secondary mb-4">
+                    Frequently Asked <span class="text-primary">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Get answers to the most common questions about scaffolding services in Surrey
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-50 rounded-2xl p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-secondary">How long does scaffolding typically need to stay up?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            The duration depends on your project type. Most residential projects require scaffolding for 2-6 weeks. Roof repairs typically take 1-3 weeks, while larger projects like extensions or rendering can take 4-8 weeks. We provide a detailed timeline during our initial consultation and can adjust as needed.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-50 rounded-2xl p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-secondary">Do I need planning permission for scaffolding?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            Generally, no planning permission is required for temporary scaffolding. However, if the scaffolding will be on public property like pavements or roads, you'll need a license from your local council. We handle all necessary permits and licenses as part of our service, ensuring full compliance with local regulations.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-50 rounded-2xl p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-secondary">What safety measures do you have in place?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            Safety is our top priority. All our scaffolding complies with UK health and safety regulations (BS EN 12811). We conduct daily inspections, provide safety certificates, use edge protection systems, install warning signs, and ensure all our team members are CISRS certified. We also carry £10 million public liability insurance for your peace of mind.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gray-50 rounded-2xl p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-secondary">Can scaffolding damage my property?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            When installed by professionals like Level Up Scaffolding, the risk of damage is minimal. We use protective measures including base plates, rubber feet, and wall pads to prevent damage to surfaces. Our experienced team takes great care during installation and dismantling. Any rare instances of damage are covered by our comprehensive insurance.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-gray-50 rounded-2xl p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-secondary">What areas of Surrey do you cover?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            We cover all of Surrey and surrounding areas including Guildford, Woking, Farnham, Godalming, Haslemere, Dorking, Reigate, Redhill, and beyond. Whether you're in urban Guildford or rural Surrey villages, our teams can reach you. Contact us to confirm coverage for your specific location.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="faq-item bg-gray-50 rounded-2xl p-6">
+                    <button class="faq-question w-full text-left flex justify-between items-center">
+                        <h3 class="text-xl font-bold text-secondary">How much does scaffolding cost in Surrey?</h3>
+                        <svg class="w-6 h-6 text-primary transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-4">
+                        <p class="text-gray-700 leading-relaxed">
+                            Scaffolding costs vary based on project size, duration, and complexity. A standard semi-detached house might cost £800-£1,200 for 2-3 weeks, while larger properties or complex installations can range from £1,500-£3,000+. We provide transparent, fixed-price quotes with no hidden costs after a free site survey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Help CTA -->
+            <div class="text-center mt-12">
+                <div class="bg-gradient-to-r from-primary to-red-600 text-white p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4">Still Have Questions?</h3>
+                    <p class="text-lg opacity-90 mb-6">
+                        Our scaffolding experts are here to help with any questions about your project
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="tel:+44-1234-567890" 
+                           class="bg-white text-primary font-bold py-3 px-8 rounded-full inline-flex items-center justify-center space-x-2 hover:bg-gray-100 transition duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <span>Call Our Experts</span>
+                        </a>
+                        <a href="index.html#quote" 
+                           class="border-2 border-white text-white font-bold py-3 px-8 rounded-full inline-flex items-center justify-center space-x-2 hover:bg-white hover:text-primary transition duration-300">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <span>Get Free Quote</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <img src="level_up_scaffolding_surrey_logo3.png" 
+                         alt="Level Up Scaffolding in Surrey logo"
+                         class="h-12 w-auto mb-6">
+                    <p class="mb-6 text-gray-300 max-w-md">
+                        Your trusted partner in safe and reliable scaffolding solutions. Professional scaffolding company based in Surrey, offering safe, reliable, and high-quality scaffolding solutions for residential projects.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/p/Level-up-Scaffolding-61559271544047" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="bg-primary hover:bg-red-700 w-10 h-10 rounded-full flex items-center justify-center transition duration-300"
+                           aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/level_upscaffolding24/" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="bg-primary hover:bg-red-700 w-10 h-10 rounded-full flex items-center justify-center transition duration-300"
+                           aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987s11.987-5.367 11.987-11.987C24.014 5.367 18.647.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.22 14.815 3.73 13.664 3.73 12.367s.49-2.448 1.396-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.906.875 1.396 2.026 1.396 3.323s-.49 2.448-1.396 3.323c-.875.807-2.026 1.297-3.323 1.297z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.twitter.com" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="bg-primary hover:bg-red-700 w-10 h-10 rounded-full flex items-center justify-center transition duration-300"
+                           aria-label="Twitter">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Info</h4>
+                    <address class="not-italic text-gray-300 space-y-3">
+                        <p class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Surrey, United Kingdom
+                        </p>
+                       <p class="flex items-center">
+    <svg class="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+    </svg>
+    <a href="tel:+447519780541" class="hover:text-white transition duration-300">
+        Call Now
+    </a>
+</p>
+
+                        <p class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                           
+                        <a href="mailto:levelupscaffolding24@gmail.com" class="hover:text-white transition duration-300">
+                                levelupscaffolding24@gmail.com
+                            </a>
+                        </p>
+                    </address>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <nav class="flex flex-col space-y-3">
+                        <a href="#home" class="text-gray-300 hover:text-white transition duration-300">Home</a>
+                        <a href="about.html" class="text-gray-300 hover:text-white transition duration-300">About Us</a>
+                        <a href="#services" class="text-gray-300 hover:text-white transition duration-300">Services</a>
+                        <a href="#gallery" class="text-gray-300 hover:text-white transition duration-300">Gallery</a>
+                        <a href="#testimonials" class="text-gray-300 hover:text-white transition duration-300">Testimonials</a>
+                        <a href="#areas" class="text-gray-300 hover:text-white transition duration-300">Areas Covered</a>
+                        <a href="#quote" class="text-primary hover:text-red-300 transition duration-300 font-semibold">Get Quote</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0 text-sm">
+                    &copy; <span id="currentYear"></span> Level Up Scaffolding. All rights reserved.
+                </p>
+                <div class="flex space-x-6 text-sm text-gray-400">
+                    <a href="privacy.html" class="hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="privacy.html" class="hover:text-white transition duration-300">Terms of Service</a>
+                    <a href="privacy.html" class="hover:text-white transition duration-300">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const content = item.querySelector('.faq-content');
+                const icon = item.querySelector('svg');
+                
+                question.addEventListener('click', () => {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            otherItem.querySelector('svg').style.transform = 'rotate(0deg)';
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    icon.style.transform = item.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0deg)';
+                });
+            });
+            
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Add scroll animation
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements for animation
+            document.querySelectorAll('.animate-fade-in, .animate-slide-in').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <!-- JSON-LD Structured Data for FAQ Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long does scaffolding typically need to stay up?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The duration depends on your project type. Most residential projects require scaffolding for 2-6 weeks. Roof repairs typically take 1-3 weeks, while larger projects like extensions or rendering can take 4-8 weeks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need planning permission for scaffolding?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Generally, no planning permission is required for temporary scaffolding. However, if the scaffolding will be on public property like pavements or roads, you'll need a license from your local council."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What safety measures do you have in place?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Safety is our top priority. All our scaffolding complies with UK health and safety regulations. We conduct daily inspections, provide safety certificates, use edge protection systems, and ensure all team members are CISRS certified."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can scaffolding damage my property?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "When installed by professionals, the risk of damage is minimal. We use protective measures including base plates, rubber feet, and wall pads to prevent damage to surfaces."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What areas of Surrey do you cover?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We cover all of Surrey including Guildford, Woking, Farnham, Godalming, Haslemere, Dorking, Reigate, Redhill, and surrounding areas."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How much does scaffolding cost in Surrey?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scaffolding costs vary based on project size, duration, and complexity. A standard semi-detached house might cost £800-£1,200 for 2-3 weeks, while larger properties can range from £1,500-£3,000+."
+                }
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
