@@ -1,0 +1,52 @@
+{
+  "business_name": "Level Up Scaffolding",
+  "business_type": "scaffolding contractor",
+  "domain": "levelupscaffolding.co.uk",
+  "area": "London",
+  "owner": "Sean Daisley",
+  "colours": "red, white, grey",
+  "telephone": "07519 780541",
+  "telephone_international": "+447519780541",
+  "whatsapp": "https://wa.me/447519780541",
+  "email": "levelupscaffolding24@gmail.com",
+  "social": {
+    "facebook": "https://www.facebook.com/levelupscaffolding",
+    "instagram": "https://www.instagram.com/levelupscaffolding"
+  },
+  "services": [
+    {"name": "Scaffolding & Access Towers", "blurb": "Highly trained professionals to ensure safe installations."},
+    {"name": "Temporary Roofs", "blurb": "Using only premium-grade materials for all projects."},
+    {"name": "Chimney Stacks", "blurb": "Your satisfaction is our priority, through to execution."}
+  ],
+  "areas": [
+    "Central London", "West London", "East London", "North London",
+    "South London", "Greater London", "Suburb Areas"
+  ],
+  "competitor_research": {
+    "aggregated_keywords": [
+      "scaffolding London", "scaffolding contractors London", "external scaffolding London",
+      "domestic scaffolding London", "temporary roof London", "chimney scaffolding London",
+      "access tower hire London", "scaffolders near me", "house scaffolding",
+      "business scaffolding London", "roof scaffolding London", "scaffolding quote London"
+    ],
+    "aggregated_services": [
+      "Scaffolding & Access Towers", "Temporary Roofs", "Chimney Stacks",
+      "Domestic scaffolding", "Commercial scaffolding", "House refurbishment access",
+      "Roof repair access"
+    ],
+    "seo_benchmarks": {"avg_heading_count": 15, "pct_with_schema": 90, "avg_word_count": 2400}
+  },
+  "business_research": {
+    "description": "Level Up Scaffolding provides safe, reliable scaffolding, access towers, temporary roofs and chimney scaffolds across Central, West, East, North and South London. Owner-led by Sean Daisley.",
+    "phones": ["07519 780541"],
+    "emails": ["levelupscaffolding24@gmail.com"],
+    "social_links": {
+      "facebook": "https://www.facebook.com/levelupscaffolding",
+      "instagram": "https://www.instagram.com/levelupscaffolding"
+    },
+    "services_mentioned": [
+      "Scaffolding & Access Towers", "Temporary Roofs", "Chimney Stacks",
+      "Domestic scaffolding", "Commercial scaffolding"
+    ]
+  }
+}
