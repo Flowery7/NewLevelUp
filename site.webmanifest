@@ -1,0 +1,30 @@
+{
+  "name": "Level Up Scaffolding",
+  "short_name": "Level Up",
+  "description": "Safe, reliable scaffolding, access towers, temporary roofs and chimney scaffolds across London. Free quotes — call 07519 780541.",
+  "start_url": "https://levelupscaffolding.co.uk/",
+  "scope": "https://levelupscaffolding.co.uk/",
+  "display": "standalone",
+  "background_color": "#1F2429",
+  "theme_color": "#D92D20",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Logo_level_Up_scaffolding.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

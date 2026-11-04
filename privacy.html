@@ -1,8 +1,33 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
+
+  <!-- UK GDPR cookie consent (shared) — must load before analytics -->
+  <script src="cookie-consent.js"></script>
+
+  <!-- Google tag (gtag.js) — only loaded after analytics consent -->
+  <script>
+  (function () {
+    function loadAnalytics() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-MXBZLCZYKY');
+
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MXBZLCZYKY';
+      document.head.appendChild(s);
+    }
+    if (window.__cookieConsent && window.__cookieConsent.analytics) {
+      loadAnalytics();
+    } else {
+      document.addEventListener('cookie-consent-changed', function (e) {
+        if (e.detail && e.detail.analytics) loadAnalytics();
+      });
+    }
+  })();
+  </script>
 
   <!-- Security -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
@@ -10,138 +35,197 @@
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-');
-</script>
-    
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Privacy Policy | Level Up Scaffolding</title>
+  <meta name="description" content="How Level Up Scaffolding collects, uses and protects your personal data under UK GDPR and the Data Protection Act 2018, including our use of cookies and Google Analytics.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://levelupscaffolding.co.uk/privacy.html">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#D92D20">
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Tailwind CDN + custom brand colours flow -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#D92D20',
+              reddark: '#B0231A',
+              dark: '#1F2429',
+              grey: '#5B6470',
+              light: '#F4F5F7'
+            }
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      padding: 20px;
-      background-color: #f8f9fa;
-    }
-    .content {
-      background-color: white;
-      padding: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      margin-bottom: 30px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 30px;
-    }
-    p {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-    .bold {
-      font-weight: bold;
-    }
-    .privacy-footer-link {
-      color: #D4AF37;
-    }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .fade-in { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .fade-in.show { opacity: 1; transform: none; }
+    .legal h2 { scroll-margin-top: 6rem; }
   </style>
 </head>
-<body>
+<body class="bg-brand-light text-brand-dark antialiased">
 
-  <div class="container">
-    <div class="content">
-      <h1>Terms and Conditions</h1>
-      
-      <p class="bold">Privacy Policy</p>
-      <p class="bold">Last Updated:</p> <p>29/09/2026</p>
-
-      <p>At Merchant-Web / Merchant Services site managers of Level Up Scaffolding website, web page and associated data collections, we are committed to safeguarding the privacy and personal data of visitors to our website. <a href="http://www.merchant-web.co.uk">www.merchant-web.co.uk</a> (the “Site managers”), and websites under our management in compliance with the General Data Protection Regulation (GDPR) and the Data Protection Act 2018. This Privacy Policy explains how we collect, use, and protect your personal information, particularly regarding the use of cookies for Google Analytics.</p>
-
-      <h2>1. Information We Collect</h2>
-      <p>We may collect the following types of information when you use our website:</p>
-      <ul>
-        <li><span class="bold">Personal Data:</span> This includes any data that can identify you as an individual, such as your name and email address, only if you voluntarily provide this information through forms (e.g., when you contact us).</li>
-        <li><span class="bold">Usage Data:</span> We collect information on how you interact with our website, such as your IP address, browser type, device information, pages visited, and the time spent on each page. This data is collected via Google Analytics to help us understand website performance and improve the user experience.</li>
-        <li><span class="bold">Cookies:</span> Cookies are small files that are placed on your device when you visit the website. We use cookies for Google Analytics to gather anonymous data on site traffic and user behavior. Cookies do not store personally identifiable information.</li>
-      </ul>
-
-      <h2>2. How We Use Your Information</h2>
-      <p>We use your information in the following ways:</p>
-      <ul>
-        <li><span class="bold">Google Analytics:</span> We use Google Analytics to collect and analyze anonymized data about website usage, such as page views, session duration, and traffic sources. This helps us to improve the functionality and content of the website.</li>
-        <li><span class="bold">Responding to Inquiries:</span> If you contact us via the website, we will use your personal data to respond to your inquiries or requests.</li>
-        <li><span class="bold">Legal Compliance:</span> We may process your data to comply with legal obligations or to protect your vital interests.</li>
-      </ul>
-
-      <h2>3. Legal Basis for Processing Data</h2>
-      <p>Under GDPR, we rely on the following legal bases to process your personal data:</p>
-      <ul>
-        <li><span class="bold">Consent:</span> We will collect and process your personal data (e.g., name, email address) only with your explicit consent, particularly when you submit a contact form.</li>
-        <li><span class="bold">Legitimate Interests:</span> We may process anonymized usage data to improve the website’s functionality and performance. We also use this data for analytics purposes.</li>
-      </ul>
-
-      <h2>4. Cookies and Google Analytics</h2>
-      <p>When you visit our website, we may place cookies on your device to collect data for Google Analytics. The information collected by these cookies is anonymized and used solely for statistical purposes.</p>
-      <p><span class="bold">Types of Cookies We Use:</span></p>
-      <ul>
-        <li><span class="bold">Google Analytics Cookies:</span> These cookies track user behavior on our website (e.g., pages visited, time spent on the site) to help us analyze and improve website performance.</li>
-      </ul>
-      <p><span class="bold">Managing Cookies:</span> You can manage or disable cookies through your browser settings at any time. However, disabling cookies may affect your experience on the site. You can also opt out of Google Analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics Opt-out Browser Add-on</a>.</p>
-
-      <h2>5. How We Protect Your Information</h2>
-      <p>We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, disclosure, or misuse. All data is stored securely, and we limit access to authorized personnel only.</p>
-      <p>However, while we strive to protect your personal data, please be aware that no security measures are completely foolproof.</p>
-
-      <h2>6. Sharing Your Information</h2>
-      <p>We do not sell or share your personal data with third parties, except in the following circumstances:</p>
-      <ul>
-        <li><span class="bold">Service Providers:</span> We may share data with trusted third parties, such as Google, solely for the purpose of providing analytics and improving our website.</li>
-        <li><span class="bold">Legal Obligations:</span> We may disclose your data if required to do so by law or to comply with legal processes.</li>
-      </ul>
-
-      <h2>7. Your Data Rights</h2>
-      <p>As a user based in the UK or EU, you have the following rights under GDPR:</p>
-      <ul>
-        <li><span class="bold">Right to Access:</span> You can request a copy of the personal data we hold about you.</li>
-        <li><span class="bold">Right to Rectification:</span> You can request corrections to any inaccurate or incomplete personal data.</li>
-        <li><span class="bold">Right to Erasure:</span> You can request the deletion of your personal data, subject to certain conditions.</li>
-        <li><span class="bold">Right to Restrict Processing:</span> You can ask us to limit how we process your personal data in certain circumstances.</li>
-        <li><span class="bold">Right to Data Portability:</span> You can request your personal data in a structured, commonly used format to be transferred to another controller.</li>
-        <li><span class="bold">Right to Object:</span> You can object to our processing of your personal data in certain situations, such as direct marketing.</li>
-      </ul>
-      <p>To exercise any of these rights, please contact us at <a href="mailto:merchantcoding@gmail.com">merchantservices.stevenson@gmail.com</a>.</p>
-
-      <h2>8. Retention of Data</h2>
-      <p>We will retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy or as required by law. Usage data collected by Google Analytics is retained for a period of <span class="bold">[insert period, e.g., 26 months]</span>, after which it is automatically deleted.</p>
-
-      <h2>9. Third-Party Links</h2>
-      <p>Our website may contain links to other websites. We are not responsible for the privacy practices of third-party websites. Please review the privacy policies of those websites before providing any personal information.</p>
-
-      <h2>10. Changes to This Privacy Policy</h2>
-      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this page periodically for any updates. The date of the latest revision will always be noted at the top.</p>
-
-      <h2>11. Contact Us</h2>
-      <p>If you have any questions or concerns about this Privacy Policy or our use of your personal data, please contact us at:</p>
-      <p>Email: <a href="mailto:merchantservices.stevenson@gmail.com">merchantservices.stevenson@gmail.com</a></p>
-      <p>Phone: <span class="bold">44 7394542901</span></p>
+  <!-- Top contact bar -->
+  <div class="bg-brand-dark text-white text-sm">
+    <div class="max-w-6xl mx-auto px-4 py-2 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+      <a href="tel:+447519780541" class="inline-flex items-center gap-2 hover:text-white/80">
+        <i class="fa-solid fa-phone w-4 text-center"></i>
+        07519 780541
+      </a>
+      <a href="mailto:levelupscaffolding24@gmail.com" class="inline-flex items-center gap-2 hover:text-white/80">
+        <i class="fa-solid fa-envelope w-4 text-center"></i>
+        levelupscaffolding24@gmail.com
+      </a>
+      <span class="hidden sm:inline-flex items-center gap-2 ml-auto">
+        <span class="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Available across London
+      </span>
     </div>
-    <footer class="text-center text-muted border-top pt-3">
-      <a href="privacy.html" class="privacy-footer-link">Privacy Policy</a>
-    </footer>
   </div>
 
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-light shadow-sm">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4" aria-label="Main navigation">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Level Up Scaffolding home">
+        <img src="images/Logo_level_Up_scaffolding.png" alt="Level Up Scaffolding logo" class="w-11 h-11 rounded-lg object-cover ring-1 ring-brand-light">
+        <span class="font-extrabold text-lg leading-tight">
+          <span class="block uppercase tracking-wide text-brand-dark">Level Up</span>
+          <span class="block text-brand-red uppercase tracking-[.2em] text-xs">Scaffolding</span>
+        </span>
+      </a>
+      <ul class="flex items-center gap-7 text-sm font-medium text-brand-dark">
+        <li><a href="index.html" class="hover:text-brand-red transition">Home</a></li>
+        <li><a href="index.html#services" class="hover:text-brand-red transition">Services</a></li>
+        <li><a href="about.html" class="hover:text-brand-red transition">About</a></li>
+        <li><a href="index.html#quote" class="bg-brand-red text-white px-5 py-2.5 rounded-full hover:bg-brand-reddark transition">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page header -->
+  <section class="relative overflow-hidden bg-brand-dark text-white">
+    <div class="absolute inset-0 opacity-[0.08] pointer-events-none" style="background-image:repeating-linear-gradient(45deg,#fff 0 2px,transparent 2px 12px);"></div>
+    <div class="max-w-4xl mx-auto px-4 py-14 lg:py-16 text-center relative">
+      <p class="inline-flex items-center gap-2 bg-brand-red/90 text-white text-sm font-semibold px-4 py-1.5 rounded-full">
+        <i class="fa-solid fa-shield-halved"></i> Your Privacy Matters
+      </p>
+      <h1 class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Privacy Policy</h1>
+      <p class="mt-4 text-white/80 text-lg">How we collect, use and protect your personal data under UK GDPR and the Data Protection Act 2018.</p>
+    </div>
+  </section>
+
+  <!-- Legal content -->
+  <main class="py-14">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="legal bg-white rounded-3xl shadow-lg ring-1 ring-brand-light p-7 sm:p-12 fade-in">
+
+        <p class="font-bold">Privacy Policy</p>
+        <p class="font-bold">Last Updated:</p> <p>29/09/2026</p>
+
+        <p>At Merchant-Web / Merchant Services site managers of Level Up Scaffolding website, web page and associated data collections, we are committed to safeguarding the privacy and personal data of visitors to our website. <a href="http://www.merchant-web.co.uk">www.merchant-web.co.uk</a> (the “Site managers”), and websites under our management in compliance with the General Data Protection Regulation (GDPR) and the Data Protection Act 2018. This Privacy Policy explains how we collect, use, and protect your personal information, particularly regarding the use of cookies for Google Analytics.</p>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">1</span>Information We Collect</h2>
+        <p>We may collect the following types of information when you use our website:</p>
+        <ul class="mt-4 space-y-3">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Personal Data:</span> This includes any data that can identify you as an individual, such as your name and email address, only if you voluntarily provide this information through forms (e.g., when you contact us).</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Usage Data:</span> We collect information on how you interact with our website, such as your IP address, browser type, device information, pages visited, and the time spent on each page. This data is collected via Google Analytics to help us understand website performance and improve the user experience.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Cookies:</span> Cookies are small files that are placed on your device when you visit the website. We use cookies for Google Analytics to gather anonymous data on site traffic and user behavior. Cookies do not store personally identifiable information.</span></li>
+        </ul>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">2</span>How We Use Your Information</h2>
+        <p>We use your information in the following ways:</p>
+        <ul class="mt-4 space-y-3">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Google Analytics:</span> We use Google Analytics to collect and analyze anonymized data about website usage, such as page views, session duration, and traffic sources. This helps us to improve the functionality and content of the website.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Responding to Inquiries:</span> If you contact us via the website, we will use your personal data to respond to your inquiries or requests.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Legal Compliance:</span> We may process your data to comply with legal obligations or to protect your vital interests.</span></li>
+        </ul>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">3</span>Legal Basis for Processing Data</h2>
+        <p>Under GDPR, we rely on the following legal bases to process your personal data:</p>
+        <ul class="mt-4 space-y-3">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Consent:</span> We will collect and process your personal data (e.g., name, email address) only with your explicit consent, particularly when you submit a contact form.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Legitimate Interests:</span> We may process anonymized usage data to improve the website’s functionality and performance. We also use this data for analytics purposes.</span></li>
+        </ul>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">4</span>Cookies and Google Analytics</h2>
+        <p>When you visit our website, we may place cookies on your device to collect data for Google Analytics. The information collected by these cookies is anonymized and used solely for statistical purposes.</p>
+        <p><span class="font-bold">Types of Cookies We Use:</span></p>
+        <ul class="mt-4 space-y-3">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Google Analytics Cookies:</span> These cookies track user behavior on our website (e.g., pages visited, time spent on the site) to help us analyze and improve website performance.</span></li>
+        </ul>
+        <p><span class="font-bold">Managing Cookies:</span> You can manage or disable cookies through your browser settings at any time. However, disabling cookies may affect your experience on the site. You can also opt out of Google Analytics tracking by installing the <a href="https://tools.google.com/dlpage/gaoptout" class="text-brand-red font-semibold hover:underline">Google Analytics Opt-out Browser Add-on</a>.</p>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">5</span>How We Protect Your Information</h2>
+        <p>We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, disclosure, or misuse. All data is stored securely, and we limit access to authorized personnel only.</p>
+        <p>However, while we strive to protect your personal data, please be aware that no security measures are completely foolproof.</p>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">6</span>Sharing Your Information</h2>
+        <p>We do not sell or share your personal data with third parties, except in the following circumstances:</p>
+        <ul class="mt-4 space-y-3">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Service Providers:</span> We may share data with trusted third parties, such as Google, solely for the purpose of providing analytics and improving our website.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Legal Obligations:</span> We may disclose your data if required to do so by law or to comply with legal processes.</span></li>
+        </ul>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">7</span>Your Data Rights</h2>
+        <p>As a user based in the UK or EU, you have the following rights under GDPR:</p>
+        <ul class="mt-4 space-y-3">
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Right to Access:</span> You can request a copy of the personal data we hold about you.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Right to Rectification:</span> You can request corrections to any inaccurate or incomplete personal data.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Right to Erasure:</span> You can request the deletion of your personal data, subject to certain conditions.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Right to Restrict Processing:</span> You can ask us to limit how we process your personal data in certain circumstances.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Right to Data Portability:</span> You can request your personal data in a structured, commonly used format to be transferred to another controller.</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-circle-check text-brand-red mt-1 shrink-0"></i><span><span class="font-bold">Right to Object:</span> You can object to our processing of your personal data in certain situations, such as direct marketing.</span></li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:merchantcoding@gmail.com" class="text-brand-red font-semibold hover:underline">merchantservices.stevenson@gmail.com</a>.</p>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">8</span>Retention of Data</h2>
+        <p>We will retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy or as required by law. Usage data collected by Google Analytics is retained for a period of <span class="font-bold">[insert period, e.g., 26 months]</span>, after which it is automatically deleted.</p>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">9</span>Third-Party Links</h2>
+        <p>Our website may contain links to other websites. We are not responsible for the privacy practices of third-party websites. Please review the privacy policies of those websites before providing any personal information.</p>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">10</span>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this page periodically for any updates. The date of the latest revision will always be noted at the top.</p>
+
+        <h2 class="mt-10 text-xl sm:text-2xl font-extrabold tracking-tight flex items-center gap-3"><span class="w-8 h-8 rounded-xl bg-brand-red text-white text-sm flex items-center justify-center shrink-0 font-bold">11</span>Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy or our use of your personal data, please contact us at:</p>
+        <p>Email: <a href="mailto:merchantservices.stevenson@gmail.com" class="text-brand-red font-semibold hover:underline">merchantservices.stevenson@gmail.com</a></p>
+        <p>Phone: <span class="font-bold">44 7394542901</span></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-brand-dark text-white">
+    <div class="border-t border-white/10">
+      <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/50">
+        <p>© <span id="year"></span> Level Up Scaffolding · levelupscaffolding.co.uk · All rights reserved.</p>
+        <p><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a> · <a href="#cookie-settings" class="ccb-settings hover:text-white transition">Cookie Settings</a> · Website built by <a href="https://merchant-web.co.uk" target="_blank" rel="noopener" class="hover:text-white transition font-semibold">Merchant-Web</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a href="https://wa.me/447519780541" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-green-500 flex items-center justify-center shadow-xl hover:scale-110 transition">
+    <i class="fa-brands fa-whatsapp text-white text-3xl"></i>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    var obs = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('show'); obs.unobserve(e.target); } }); }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(function (el) { obs.observe(el); });
+  </script>
 </body>
 </html>

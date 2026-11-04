@@ -2,6 +2,16 @@
 <html lang="en-GB">
 <head>
 
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXBZLCZYKY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MXBZLCZYKY');
+</script>
+
   <!-- Security -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta http-equiv="X-Frame-Options" content="DENY">
@@ -35,6 +45,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#D92D20">
 
   <!-- Font Awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -68,17 +80,6 @@
   </style>
 </head>
 <body class="bg-white text-brand-dark antialiased">
-
-  <!-- UK GDPR cookie notice -->
-  <div id="cookieBanner" class="fixed bottom-0 inset-x-0 z-[60] bg-brand-dark text-white shadow-2xl" style="display:none;">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-      <p class="text-sm text-white/90 flex-1">We use cookies to improve your browsing experience and analyse site traffic. We only set essential cookies unless you choose to allow analytics. See our full policy for details.</p>
-      <div class="flex gap-3 shrink-0">
-        <button onclick="setCookieChoice('essential')" class="px-4 py-2 rounded-full bg-white/10 border border-white/30 text-sm hover:bg-white/20">Essential only</button>
-        <button onclick="setCookieChoice('all')" class="px-4 py-2 rounded-full bg-brand-red text-white text-sm hover:bg-brand-reddark">Accept all</button>
-      </div>
-    </div>
-  </div>
 
   <!-- Top contact bar -->
   <div class="bg-brand-dark text-white text-sm">
@@ -593,7 +594,7 @@
     <div class="border-t border-white/10">
       <div class="max-w-6xl mx-auto px-4 py-5 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-white/50">
         <p>© <span id="year"></span> Level Up Scaffolding · levelupscaffolding.co.uk · All rights reserved.</p>
-        <p><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a> · Website built by <a href="https://merchant-web.co.uk" target="_blank" rel="noopener" class="hover:text-white transition font-semibold">Merchant-Web</a></p>
+        <p><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a> · <a href="#cookie-settings" class="ccb-settings hover:text-white transition">Cookie Settings</a> · Website built by <a href="https://merchant-web.co.uk" target="_blank" rel="noopener" class="hover:text-white transition font-semibold">Merchant-Web</a></p>
       </div>
     </div>
   </footer>
@@ -603,16 +604,10 @@
     <i class="fa-brands fa-whatsapp text-white text-3xl"></i>
   </a>
 
+  <!-- UK GDPR cookie consent (shared) -->
+  <script src="cookie-consent.js"></script>
+
   <script>
-    // Cookie banner
-    (function () {
-      var ch = document.cookie.match(/(?:^|;\s*)cookieConsent=([^;]*)/);
-      if (!ch) document.getElementById('cookieBanner').style.display = 'block';
-    })();
-    function setCookieChoice(kind) {
-      document.cookie = "cookieConsent=" + kind + "; max-age=" + (60*60*24*365) + "; path=/";
-      document.getElementById('cookieBanner').style.display = 'none';
-    }
     // Mobile menu toggle
     document.getElementById('menuBtn').addEventListener('click', function () {
       var m = document.getElementById('mobileMenu');
