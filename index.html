@@ -2,9 +2,12 @@
 <html lang="en-GB">
 <head>
 
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
-
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scaffolding Contractors London | Level Up Scaffolding</title>
@@ -158,11 +161,11 @@
         </div>
         <div class="mt-10 grid grid-cols-3 gap-4 max-w-md text-center">
           <div class="bg-white/5 border border-white/10 rounded-xl p-3">
-            <p class="text-2xl font-extrabold text-brand-red">100%</p>
+            <p class="text-2xl font-extrabold text-brand-red">Safe</p>
             <p class="text-xs text-white/70 mt-1">Fully Insured</p>
           </div>
           <div class="bg-white/5 border border-white/10 rounded-xl p-3">
-            <p class="text-2xl font-extrabold text-brand-red">7</p>
+            <p class="text-2xl font-extrabold text-brand-red">Many</p>
             <p class="text-xs text-white/70 mt-1">London Areas Covered</p>
           </div>
           <div class="bg-white/5 border border-white/10 rounded-xl p-3">
@@ -272,7 +275,36 @@
         </div>
       </div>
     </div>
+
+    <!-- Rolling location banner -->
+    <div class="mt-14 bg-brand-light border-y border-brand-light overflow-hidden fade-in" aria-label="Areas we cover">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center gap-3 sm:gap-6">
+        <p class="shrink-0 text-sm font-bold uppercase tracking-widest text-brand-red">Now covering:</p>
+        <div class="relative overflow-hidden flex-1 w-full">
+          <div id="locationsTrack" class="flex items-center gap-3 whitespace-nowrap will-change-transform" style="animation: rollLocations 60s linear infinite;">
+            <!-- Populated by JS (keeps list in sync with schema areaServed) -->
+          </div>
+        </div>
+      </div>
+      <div class="h-px bg-gradient-to-r from-transparent via-brand-red/30 to-transparent"></div>
+    </div>
+
+    <noscript>
+      <div class="max-w-6xl mx-auto px-4 py-4 text-sm text-brand-grey">
+        We cover: Central London, West London, East London, North London, South London, Greater London, Twickenham, Richmond, Wimbledon, Croydon, Sutton, Kingston upon Thames, Bromley, Bexley, Dartford, Enfield, Walthamstow, Ilford, Romford, Barking, Islington, Camden, Hackney, Ealing, Wembley, Harrow, Barnet, St Albans, Hatfield, Luton, Redhill, Reigate, Guildford, Woking, Slough, Heathrow, Hounslow, Greenwich, Lewisham, Clapham, Fulham, Chelsea, Kensington and Chiswick.
+      </div>
+    </noscript>
   </section>
+
+  <style>
+    @keyframes rollLocations {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #locationsTrack { animation: none !important; }
+    }
+  </style>
 
   <!-- Gallery -->
   <section id="gallery" class="py-20 bg-brand-light">
@@ -653,6 +685,41 @@
       entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('show'); obs.unobserve(e.target); } });
     }, { threshold: 0.12 });
     document.querySelectorAll('.fade-in').forEach(function (el) { obs.observe(el); });
+
+    // Rolling locations banner
+    (function () {
+      var track = document.getElementById('locationsTrack');
+      if (!track) return;
+      var locations = [
+        "Central London","West London","East London","North London","South London","Greater London",
+        "Twickenham","Richmond","Wimbledon","Croydon","Sutton","Kingston upon Thames","Wandsworth",
+        "Bromley","Bexley","Dartford","Enfield","Walthamstow","Ilford","Romford","Barking",
+        "Islington","Camden","Hackney","Ealing","Wembley","Harrow","Barnet","Watford","St Albans",
+        "Hatfield","Luton","Redhill","Reigate","Guildford","Woking","Slough","Heathrow",
+        "Hounslow","Greenwich","Lewisham","Clapham","Fulham","Chelsea","Kensington","Chiswick"
+      ];
+      // Build chips, then duplicate the set so the -50% translate loops seamlessly
+      function buildChips() {
+        track.innerHTML = '';
+        locations.forEach(function (loc) {
+          var s = document.createElement('span');
+          s.className = 'px-4 py-1.5 bg-white text-brand-dark rounded-full text-sm font-semibold ring-1 ring-brand-light shrink-0';
+          s.textContent = loc;
+          track.appendChild(s);
+        });
+      }
+      buildChips();
+      // Duplicate full set for seamless loop
+      var set = Array.prototype.slice.call(track.children);
+      set.forEach(function (chip) {
+        track.appendChild(chip.cloneNode(true));
+      });
+      // Adjust duration based on content width for consistent speed
+      requestAnimationFrame(function () {
+        var w = track.scrollWidth / 2;
+        if (w > 0) track.style.animationDuration = Math.max(20, Math.round(w / 50)) + 's';
+      });
+    })();
     // Quote form -> POST JSON to AWS Lambda via API Gateway, falls back to email
     var QUOTE_API_URL = 'https://YOUR-API-ID.execute-api.eu-west-2.amazonaws.com/prod/quote'; // TODO: replace with your API Gateway endpoint
 
@@ -725,7 +792,14 @@
     "description": "Scaffolding contractors providing safe, reliable scaffolding, access towers, temporary roofs and chimney scaffolds across London.",
     "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "GB" },
     "geo": { "@type": "GeoCoordinates", "latitude": 51.5074, "longitude": -0.1278 },
-    "areaServed": ["Central London","West London","East London","North London","South London","Greater London"],
+    "areaServed": [
+      "Central London","West London","East London","North London","South London","Greater London",
+      "Twickenham","Richmond","Wimbledon","Croydon","Sutton","Kingston upon Thames","Wandsworth",
+      "Bromley","Bexley","Dartford","Enfield","Walthamstow","Ilford","Romford","Barking",
+      "Islington","Camden","Hackney","Ealing","Wembley","Harrow","Barnet","St Albans",
+      "Hatfield","Luton","Redhill","Reigate","Guildford","Woking","Slough","Heathrow",
+      "Hounslow","Greenwich","Lewisham","Clapham","Fulham","Chelsea","Kensington","Chiswick"
+    ],
     "sameAs": ["https://www.facebook.com/levelupscaffolding","https://www.instagram.com/levelupscaffolding"],
     "priceRange": "££",
     "openingHours": "Mo-Sa 08:00-18:00",
