@@ -606,6 +606,8 @@
 
   <!-- UK GDPR cookie consent (shared) -->
   <script src="cookie-consent.js"></script>
+  <!-- Google Analytics (gtag.js) — consent-gated -->
+  <script src="analytics.js"></script>
 
   <script>
     // Mobile menu toggle
@@ -752,6 +754,7 @@
         return res.json().catch(function () { return {}; });
       })
       .then(function () {
+        window.trackEvent('lead', 'quote_submitted', { label: service });
         form.reset();
         btn.textContent = 'Request My Free Quote →';
         btn.disabled = false;
@@ -759,6 +762,7 @@
       })
       .catch(function (err) {
         console.error('Quote submission failed:', err);
+        window.trackEvent('lead', 'quote_fallback_email', { label: service });
         // Fallback: open email client with prefilled details
         var subject = encodeURIComponent('Website Quote Enquiry — ' + name);
         var body = encodeURIComponent(

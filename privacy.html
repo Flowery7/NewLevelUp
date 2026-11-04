@@ -4,30 +4,8 @@
 
   <!-- UK GDPR cookie consent (shared) — must load before analytics -->
   <script src="cookie-consent.js"></script>
-
-  <!-- Google tag (gtag.js) — only loaded after analytics consent -->
-  <script>
-  (function () {
-    function loadAnalytics() {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-MXBZLCZYKY');
-
-      var s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-MXBZLCZYKY';
-      document.head.appendChild(s);
-    }
-    if (window.__cookieConsent && window.__cookieConsent.analytics) {
-      loadAnalytics();
-    } else {
-      document.addEventListener('cookie-consent-changed', function (e) {
-        if (e.detail && e.detail.analytics) loadAnalytics();
-      });
-    }
-  })();
-  </script>
+  <!-- Google Analytics (gtag.js) — consent-gated -->
+  <script src="analytics.js"></script>
 
   <!-- Security -->
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
